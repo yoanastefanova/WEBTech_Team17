@@ -1,0 +1,29 @@
+{
+  "name": "cloud17",
+  "version": "1.0.0",
+  "description": "This is a project for Web Tech course @FMI",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoanastefanova/WEBTech_Team17.git"
+  },
+  "author": "Atanas Peshev, Yoana Stefanova, Daniel Shahanski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoanastefanova/WEBTech_Team17/issues"
+  },
+  "homepage": "https://github.com/yoanastefanova/WEBTech_Team17#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "@types/node": "^15.12.1",
+    "express": "^4.17.1",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.12.13"
+  }
+}
