@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+    <link rel="stylesheet" type="text/css" href="styles/login-style.css">
+	<link rel="icon" href="images/icon.png" type="image/icon png">
+    <script src="scripts/login.js"></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="user signInBox">
+                <div class="imgBox">
+                    <img src="images/logo1.png">
+                </div>
+                <div class="formBox">
+                    <form>
+                        <h2>Sign In</h2>
+                        <input type="text" name="" placeholder="Username">
+                        <input type="password" name="" placeholder="Password">
+                        <input type="submit" name="" value="Login">
+                        <p class="signUp">Don't have an account? <a href="#" onclick="toggleForm();"> Sign Up.</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user signUpBox">
+                <div class="formBox">
+                    <form>
+                        <h2>Create your Account</h2>
+                        <input type="text" name="" placeholder="Username">
+                        <input type="email" name="" placeholder="Email Address">
+                        <input type="password" name="" placeholder="Create Password">
+                        <input type="password" name="" placeholder="Confirm Password">
+                        <input type="submit" name="" value="Sing Up">
+                        <p class="signUp">Already have an account? <a href="#" onclick="toggleForm();"> Sign In.</a></p>
+                    </form>
+                </div>
+                <div class="imgBox">
+                    <img src="images/logo2.png">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

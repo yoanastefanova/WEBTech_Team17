@@ -1,0 +1,152 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    padding: 8px 2%;
+    align-items: center;
+    background-color: #4682B4;
+}
+
+p.logo {
+    font-size: 40px;
+    font-family: fantasy;
+    margin: 0;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+.searchfield {
+    display: flex;
+    width: 50%;
+    position: absolute;
+    left: 20%;
+}
+
+form.searchfield input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid black;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+
+  form.searchfield button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #072742;
+    color: rgb(233, 213, 213);
+    font-size: 17px;
+    border: 1px solid black;
+    border-left: none;
+    cursor: pointer;
+  }
+
+.navigation input {
+    height: 28px;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    padding-right: 20px;
+}
+
+.navigation ul li {
+    margin-left: 16px;
+}
+
+.side-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    align-items: center;
+    width: 80%;
+}
+
+.shared {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.shared2 {
+    display: inline;
+}
+
+.info {
+    padding-top: 60px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    position: relative;
+    left: 25px;
+    bottom: 0;
+    height: 15px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#name {
+    padding-left: 50px;
+}
+
+#size {
+    padding-right: 250px;
+}
+
+#file {
+    height: 20px;
+}
+
+.file-info {
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+    position: relative;
+    left: 25px;
+    bottom: 0;
+    height: 15px;
+    width: 95%
+}
+
+.navigation2 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    padding-right: 20px;
+    justify-content: space-between;
+    max-width: 130px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-header {
+        width: 145%;
+    }
+    .shared {
+        width: 145%;
+    }
+    .info {
+        width: 120%;
+    }
+    .file-info {
+        width: 120%;
+    }
+    .searchfield {
+        left: 50%;
+        width: 70%;
+    }
+
+    #size {
+        padding-left: 150px;
+    }
+  }
