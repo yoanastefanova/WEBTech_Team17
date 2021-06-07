@@ -52,7 +52,7 @@ table {
 section {
     position: relative;
     min-height: 100vh;
-    background: url(login_vid.gif) center no-repeat;
+    background: url(../images/login_vid.gif) center no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
