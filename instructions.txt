@@ -1,0 +1,3 @@
+To run the applocation, please write in the terminal the following code:
+
+npm run dev
