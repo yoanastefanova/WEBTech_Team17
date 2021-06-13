@@ -395,3 +395,39 @@ img {
 *{
     font-family: Calibri;
 }
+
+
+
+input[type="submit"] {
+    display: none;
+}
+
+.custom-submit{
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #677eff 40%, #3d446b 100%);
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.custom-submit:hover{
+    background: linear-gradient(to bottom left, #b3bcf0 40%, #6e83f8 100%);
+}
+
+
+
+
+input[type="file"] {
+    display: none;
+}
+
+
+.custom-upload{
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #677eff 40%, #3d446b 100%);
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.custom-upload:hover{
+    background: linear-gradient(to bottom left, #b3bcf0 40%, #6e83f8 100%);
+}
