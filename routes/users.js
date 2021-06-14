@@ -4,6 +4,7 @@ const bcrypt = require('bcryptjs');
 const passport = require('passport');
 
 const app = express();
+
 // Static files
 app.use(express.static('public'));
 app.use('styles', express.static(__dirname + '../public/styles'));
@@ -40,7 +41,6 @@ router.post('/register', (req, res) => {
     if(password.length <6){
         errors.push({msg: 'Passwords should be at leas 6 characters!'});
     }
-    // Check other things validation --------------------------
 
     if(errors.length > 0){
         res.render('register', {    //re-render registration form

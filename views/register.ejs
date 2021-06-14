@@ -5,11 +5,11 @@
                 <form name="myForm" action="/users/register" method="POST">
                     <h2>Create your Account</h2>
                     <%- include ('partials/massages') %>
-                    <input type="text" id="username" name="username" placeholder="Username" value="<%= typeof username != 'undefined' ? username : ''%>">
+                    <input type="text" id="username" name="username" placeholder="Name" value="<%= typeof username != 'undefined' ? username : ''%>">
                     <input type="email" id="email" name="email" placeholder="Email Address" value="<%= typeof email != 'undefined' ? email : ''%>">
                     <input type="password" id="password" name="password" placeholder="Create Password" value="<%= typeof email != 'undefined' ? password : ''%>">
                     <input type="password" name="password2" placeholder="Confirm Password" value="<%= typeof email != 'undefined' ? password2 : ''%>">
-                    <a href="" onclick="validate()" ><input type="submit" name="" value="Sing Up"></a>
+                    <input type="submit" name="" value="Sing Up">
                     <p class="signUp">Already have an account? <a href="/users/login"> Log In.</a></p>
                 </form>
             </div>

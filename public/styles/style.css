@@ -1,6 +1,7 @@
 ﻿/*RESET*/
 @import "reset-css.css";
 
+
 section .container-hi {
     position: relative;
     width: 400px;
@@ -178,9 +179,9 @@ section .container .user .formBox form .signUp a{
     }
 }
 
-/*CSS -------------------------------------------------------------------------------*/
+/*CSS LOGGED IN PAGES*/
 nav{
-    background: linear-gradient(to bottom left, #4f5fcd 40%, #9caaf7 100%);
+    background: linear-gradient(to bottom left, #4f5fcd 40%, #31bdf7 100%);
     padding: 15px 40px 15px 70px;
     border: 1px solid black;
     border-left: none;
@@ -398,7 +399,7 @@ img {
 
 
 
-input[type="submit"] {
+.admin__submit{
     display: none;
 }
 
@@ -413,11 +414,16 @@ input[type="submit"] {
     background: linear-gradient(to bottom left, #b3bcf0 40%, #6e83f8 100%);
 }
 
-
 input[type="file"] {
-    display: none;
-}
 
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #677eff 40%, #3d446b 100%);
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.admin__input:hover{
+    background: linear-gradient(to bottom left, #b3bcf0 40%, #6e83f8 100%);
+}
 
 .custom-upload{
     padding: 1rem;

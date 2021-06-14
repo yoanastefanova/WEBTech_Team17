@@ -7,6 +7,7 @@ const passport = require('passport');
 
 // const app = require("./files");
 const app = express();
+
 // Static Files
 app.use(express.static('public'));
 app.use('styles', express.static(__dirname + 'public/styles'));
@@ -36,8 +37,9 @@ app.use(express.urlencoded({ extended: true}));
 app.use(session({
     secret: 'secret',
     resave: true,
-    saveUninitialized: true
-    //cookie: {secure: true}
+    saveUninitialized: true,
+    cookie: {maxAge: 604800000 // ExpiresAt: 7 days
+    }
 }));
 
 // Passport middleware (after Express Session middleware) initializing the strategy
