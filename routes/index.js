@@ -7,11 +7,6 @@ const multer = require("multer");
 const File = require("../models/fileSchema");
 /*
 const app = express();
-// Static files
-app.use(express.static('public'));
-app.use('styles', express.static(__dirname + 'public/styles'));
-app.use('images', express.static(__dirname + 'public/images'));
-app.use('scripts', express.static(__dirname + 'public/scripts'));
 */
 
 router.use(
