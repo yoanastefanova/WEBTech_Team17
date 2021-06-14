@@ -1,0 +1,7 @@
+**Connection String:
+
+mongodb+srv://danielshahanski:danielshahanski@webtechcluster.nbq5t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+**To run the applocation, please write in the terminal the following code:
+
+npm run dev
