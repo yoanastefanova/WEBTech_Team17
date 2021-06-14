@@ -414,8 +414,6 @@ input[type="submit"] {
 }
 
 
-
-
 input[type="file"] {
     display: none;
 }
@@ -431,3 +429,4 @@ input[type="file"] {
 .custom-upload:hover{
     background: linear-gradient(to bottom left, #b3bcf0 40%, #6e83f8 100%);
 }
+

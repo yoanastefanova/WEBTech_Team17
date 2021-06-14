@@ -5,13 +5,14 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
 
+// const app = require("./files");
 const app = express();
-
 // Static Files
 app.use(express.static('public'));
 app.use('styles', express.static(__dirname + 'public/styles'));
 app.use('images', express.static(__dirname + 'public/images'));
 app.use('scripts', express.static(__dirname + 'public/scripts'));
+
 
 // Passport config
 require('./config/passport')(passport);
@@ -57,7 +58,6 @@ app.use((req, res, next) => {
 // Routes
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
-
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, console.log(`Server started on ${PORT}`));
