@@ -19,25 +19,25 @@ router.use(
 router.get('/', (req, res) => res.render('welcome'));
 const multerStorage = multer.diskStorage({
     destination: (req, file, cb) => {
-      cb(null, "public");
+      cb(null, "public/files");
     },
     filename: (req, file, cb) => {
       const ext = file.mimetype.split("/")[1];
-      cb(null, `files/admin-${file.originalname}-${Date.now()}.${ext}`);
+      cb(null, `${file.originalname}`);
     },
   });
 
-  const multerFilter = (req, file, cb) => {
-    if (file.mimetype.split("/")[1] === "pdf") {
-      cb(null, true);
-    } else {
-      cb(new Error("Not a PDF File!!"), false);
-    }
-  };
+  // const multerFilter = (req, file, cb) => {
+  //   if (file.mimetype.split("/")[1] === "pdf") {
+  //     cb(null, true);
+  //   } else {
+  //     cb(new Error("Not a PDF File!!"), false);
+  //   }
+  // };
 
 const upload = multer({
     storage: multerStorage,
-    fileFilter: multerFilter,
+    //fileFilter: multerFilter,
   });
 
 // Home logged in
