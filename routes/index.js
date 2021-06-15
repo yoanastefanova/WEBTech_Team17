@@ -15,6 +15,8 @@ router.use(
     })
   );
 
+var maxSize = 50000;
+
 // Welcome Page
 router.get('/', (req, res) => res.render('welcome'));
 const multerStorage = multer.diskStorage({
@@ -37,6 +39,7 @@ const multerStorage = multer.diskStorage({
 
 const upload = multer({
     storage: multerStorage,
+    limits: { fileSize: maxSize }
     //fileFilter: multerFilter,
   });
 
