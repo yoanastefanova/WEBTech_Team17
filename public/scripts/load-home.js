@@ -22,6 +22,9 @@ window.addEventListener("load", async () => {
                     <button class="btn card_btn" data-id=${file._id}>Download</button>
                     <button class="btn card_btn">Share</button>
                     <button class="btn card_btn">Delete</button>
+                    <a href="http://localhost:5000/files/${file.name}">
+                    <button class="btn card_btn">View</button>
+                </a>
                 </div>
             </div>
         </li>
