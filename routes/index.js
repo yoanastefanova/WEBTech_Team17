@@ -53,7 +53,7 @@ router.post("/api/uploadFile", upload.single("myFile"),ensureAuthenticated, asyn
         const newFile = await File.create({
           name: req.file.filename,
             owner: req.user.email,
-            size: 5
+            size: req.file.size/1024
         });
         res.status(200).json({
           status: "success",
