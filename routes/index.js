@@ -66,6 +66,10 @@ router.post("/api/uploadFile", upload.single("myFile"),ensureAuthenticated, asyn
       }
 });
 
+router.get("/download", (req, res) => {
+  res.sendFile("homepage.ejs", {root : __dirname})
+});
+
 router.get("/api/getFiles", async (req, res) => {
     try {
       const files = await File.find();
