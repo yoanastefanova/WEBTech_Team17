@@ -19,7 +19,9 @@ window.addEventListener("load", async () => {
                     <h2 class="card_title" id="fname">${file.name}</h2>
                     <h3 class="card_text" id="size">Size: ${file.size}</h3>
                     <h3 class="card_text" id="date">Date: ${file.createdAt}</h3>
-                    <button class="btn card_btn" data-id=${file._id}>Download</button>
+                    <a href="${file.name}" download="${file.name}">
+                        <button action= class="btn download_btn" data-id=${file._id}>Download</button>
+                    </a>
                     <button class="btn card_btn">Share</button>
                     <button class="btn card_btn">Delete</button>
                     <a href="http://localhost:5000/files/${file.name}">

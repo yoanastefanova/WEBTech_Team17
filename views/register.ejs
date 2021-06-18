@@ -9,7 +9,7 @@
                     <input type="email" id="email" name="email" placeholder="Email Address" value="<%= typeof email != 'undefined' ? email : ''%>">
                     <input type="password" id="password" name="password" placeholder="Create Password" value="<%= typeof email != 'undefined' ? password : ''%>">
                     <input type="password" name="password2" placeholder="Confirm Password" value="<%= typeof email != 'undefined' ? password2 : ''%>">
-                    <input type="submit" name="" value="Sing Up">
+                    <button id="login-btn" name="Login" onclick="sendReq(event)">SignUp</button>
                     <p class="signUp">Already have an account? <a href="/users/login"> Log In.</a></p>
                 </form>
             </div>

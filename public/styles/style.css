@@ -314,6 +314,53 @@ img {
     vertical-align: middle;
 }
 
+a{
+    color: #ffffff;
+    padding: 0.7rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+}
+
+#login-btn{
+    max-width: 100px;
+    background: #677eff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    border-color: #677eff;
+    border-radius: 5px;
+
+}
+
+a:hover{
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+a{
+    color: #ffffff;
+    padding: 0.7rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+}
+
+
 .btn {
     color: #ffffff;
     padding: 0.7rem;
